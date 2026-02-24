@@ -32,7 +32,7 @@ class Solution:
 			ans += ch * count
 
 		return ans
-	# Test case
+
 sol = Solution()
 
 print(sol.chars_frequency_brute("ABC"))
