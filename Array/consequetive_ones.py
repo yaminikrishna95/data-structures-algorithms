@@ -2,7 +2,7 @@ from typing import List
 
 class Solution:
 
-
+    #tc-0(n) and sc-0(1)
     def consequetive_brute(self, nums: List[int]) -> int:
         max_length=0
         current_length=0
