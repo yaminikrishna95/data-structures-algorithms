@@ -2,19 +2,18 @@ from typing import List
 
 class Solution:
 
+
     def consequetive_brute(self, nums: List[int]) -> int:
-        max_length = 0
+        max_length=0
+        current_length=0
         for i in range(len(nums)):
-            if nums[i] ==1:
-                max_length += 1
+            if nums[i]==1:
+                current_length+=1
+                max_length = max(current_length,max_length)
             elif nums[i]==0:
-                if i == len(nums)-1:
-                   return max_length
-                else:
-                   max_length=0
+                current_length =0
+                max_length= max(current_length,max_length)
         return max_length
-
-
 
 
 
