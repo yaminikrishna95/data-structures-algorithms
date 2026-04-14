@@ -1,7 +1,7 @@
 from typing import List
 
 class Solution:
-    max_length = 0
+
     def LongestSubarray_brute(self, nums: List[int],k:int) -> int:
         max_length = 0
         for i in range(len(nums)):
@@ -12,13 +12,14 @@ class Solution:
                     max_length = max(max_length,j-i+1)
         return max_length
 
-
+    def LongestSubarray_optimal(self, nums: List[int],k:int) -> int:
+        pass
 
 
 if __name__ == "__main__":
-    arr = [10,5,2,7,1,9]
-    k=15
+    arr = [1,2,3,1,1,1]
+    k=3
     sol = Solution()
     print(sol.LongestSubarray_brute(arr,k))
-    #optimal_ans = sol.rotate_array_optimal(arr)
+    print(sol.LongestSubarray_optimal(arr,k))
 
