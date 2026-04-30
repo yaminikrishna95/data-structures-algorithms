@@ -42,6 +42,7 @@ class Solution:
 
 
 
+
 if __name__ == "__main__":
     nums1= [4,5,6,0,0,0]
     nums2=[1,2,3]
